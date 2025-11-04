@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+body{
+  margin: 2vh 10vw;
+}
+main{
+  width: 100%;
+  border: 2px solid black;
+  padding: 15px 4%;
+}
+.cv-header{
+  width: 100%;
+  padding: 0;
+   text-align: center;
+      font: 'Engravers MT';
+      background-color: rgb(194, 194, 167);
+      text-shadow: 2px 2px 1px white;
+      margin-bottom: 80px;
+      font-size: 40px;
+      letter-spacing: 10px;
+      word-spacing: 50px;
+}
+hr{
+  border: 2px solid #8b8989;
+  height: 5px;
+}
+.name-container{
+  width: 100%;
+  padding: 5px 3%;
+}
+.name-container h2{
+  font-size: 25px;
+  padding-bottom: 2px;
+}
+.contact{
+  padding-left: 30px;
+}
+.contact a{
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  padding: 10px 3%;
+}
+.container h2{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.container p{
+padding-left: 30px;
+}
+.container ul{
+  margin-left: 5%;
+}
+.container li{
+  padding-bottom: 20px;
+}
+.container h3{
+  padding-bottom: 5px;
+}
+.list-style{
+  list-style: decimal;
+}
+.qaulifi ul{
+  display: flex;
+  flex-direction: column;
+
+}
+.qaulifi li{
+  display: flex;
+  flex-wrap: wrap;
+}
+.qaulifi li :first-child{
+  width: 10%;
+}
+.qaulifi li :last-child{
+  width: 85%;
+  padding-left: 5px;
+}
+.pers-detail li>div{
+  display: flex;
+}
+.pers-detail li>div :nth-child(1){
+  width:30%;
+}
+.pers-detail li>div :nth-child(2){
+  width:10%;
+}
+.pers-detail li>div :nth-child(3){
+  width:60%;
+}
+
+
+@media only screen and (max-width:765px){
+  .pers-detail li>div{
+  display: block; 
+  
+}
+ .pers-detail li>div :nth-child(1){
+  font-weight: 700;
+  width:100%;
+}
+  .pers-detail li>div :nth-child(2){
+  display: none;
+}
+  .pers-detail li>div :nth-child(3){
+  padding-left: 15px;
+  width: 100%;
+
+}
+}
