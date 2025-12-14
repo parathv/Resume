@@ -235,21 +235,23 @@
     });
     // let joinDate = `${1}/${10}/${2009}`
     // let year  = dateNow-joinDate
-
+    const opt = {
+      margin: 0.25,
+      filename: 'parath_CV.pdf',
+      jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' }
+    };
+    
     function download(){
       const pdf=document.getElementById("resume");
       html2pdf().set(opt).from(pdf).save();
     }
-    var opt = {
-      margin:       0.25,
-      filename:     'parath_CV.pdf',
-      jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
-    };
+    
     
   </script>
 </body>
 
 </html>
+
 
 
 
