@@ -5,6 +5,7 @@
   <link rel="shortcut icon" href="pv1.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <link rel="stylesheet" href="index.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.1/html2pdf.bundle.min.js" integrity="sha512-D25Z8/1q2z65ZpJ3NzY6XiPZfwjhbv34OTQHDIZd+KPK+uWCovGt+fMkSzW8ArzCMFUgZt6Cdu7qoXNuy6a2GA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -12,6 +13,8 @@
 
 
 <body>
+  <button class="download1" onclick="download()">Resume Download</button>
+  <br/><br/>
   <main>
     <h1 class="cv-header">CURRICULUM VITAE</h1>
     <div class="name-container">
@@ -206,6 +209,7 @@
     </div>
     <br><br>
   </main>
+  <center><button class="download2" onclick="download()">Resume Download</button></center>
 
 
 
@@ -231,11 +235,22 @@
     });
     // let joinDate = `${1}/${10}/${2009}`
     // let year  = dateNow-joinDate
+
+    function download(){
+      const pdf=document.getElementById("resume");
+      html2pdf().set(opt).from(pdf).save();
+    }
+    var opt = {
+      margin:       0.25,
+      filename:     'parath_CV.pdf',
+      jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
+    };
     
   </script>
 </body>
 
 </html>
+
 
 
 
