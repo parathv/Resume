@@ -17,6 +17,7 @@ body{
   position: absolute;
   right: 1px;
   top: 10px;
+  cursor: pointer;
 }
 .download2{
   padding: 10px 50px;
@@ -29,6 +30,7 @@ body{
   font-weight: 700;
   font-size: 1.2rem;
   font-family: sans-serif;
+  cursor: pointer;
 }
 main{
   width: 100%;
@@ -136,4 +138,5 @@ padding-left: 30px;
 
 }
 }
+
 
